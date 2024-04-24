@@ -20,7 +20,7 @@ export default  function ProjectPage() {
   }, []);
 
   return (
-    <main className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto p-2 mt-5 justify-center place-items-center'>
+    <main className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto p-10 mt-2 md:p-4 justify-center place-items-center'>
       {projects.map((project, i) => (
         // <ProjectCard key={project.id} project={project} />
 

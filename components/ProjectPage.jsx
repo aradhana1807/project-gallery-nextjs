@@ -3,9 +3,10 @@
 import { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { LinkSimpleHorizontal  } from 'phosphor-react';
 
 
-export default  function ProjectPage() {
+export default function ProjectPage() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -40,7 +41,12 @@ export default  function ProjectPage() {
             <p>
               {project['project-description']}
             </p>
-            <p className="text-sm text-red-600 underline underline-offset-4"><Link href={project['project-url']} target="_blank" rel="noopener noreferrer">View</Link></p>
+            <p className="flex gap-2 text-sm text-red-600">
+
+              <Link href={project['project-url']} target="_blank" rel="noopener noreferrer">
+                <LinkSimpleHorizontal  size={25} className="cursor-pointer transform hover:scale-125 transition duration-300 hover:text-red-500" />
+              </Link>
+            </p>
           </div>
         </motion.div>
       ))}

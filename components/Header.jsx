@@ -5,7 +5,7 @@ import { Desktop, GithubLogo, LinkedinLogo } from "@phosphor-icons/react/dist/ss
 
 export default function Header() {
   return (
-    <div className='shadow-sm border-b sticky top-0 bg-white/50 backdrop-blur-lg z-30 p-4'>
+    <div className='shadow-sm border-b sticky top-0 bg-white/50 backdrop-blur-xl z-30 p-4'>
 
       <div className='max-w-6xl mx-auto flex items-center justify-between'>
         {/* Logo */}
@@ -21,11 +21,11 @@ export default function Header() {
 
         <div className='flex items-center gap-4'>
           <Link href='https://github.com/aradhana1807' >
-            <GithubLogo className='cursor-pointer transform hover:scale-125 transition duration-300 hover:text-red-500' size={32} />
+            <GithubLogo className='cursor-pointer transform hover:scale-125 transition duration-300 hover:text-neutral-500' size={32} />
           </Link>
 
           <Link href='https://www.linkedin.com/in/aradhana-nayak-607959212' >
-            <LinkedinLogo className='cursor-pointer transform hover:scale-125 transition duration-300 hover:text-red-500'
+            <LinkedinLogo className='cursor-pointer transform hover:scale-125 transition duration-300 hover:text-blue-500'
               size={32} />
           </Link>
         </div>

@@ -66,9 +66,7 @@
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -77,4 +75,21 @@
     @apply bg-background text-foreground;
     font-family: 'Fira Code', monospace;
   }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#555] rounded-md;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
 }
+
+/* @layer base {
+  
+} */

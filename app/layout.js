@@ -3,6 +3,7 @@ import "./globals.css";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import { ThemeProvider } from "next-themes";
 
+
 export const metadata = {
   title: "Project Gallery",
   description:

@@ -5,7 +5,7 @@ import { ModeToggle } from "./ModeToggle";
 
 export default function Header() {
   return (
-    <div className="shadow-sm border-b sticky top-0 bg-white/50 backdrop-blur-xl z-30 p-4 dark:bg-neutral-800">
+    <div className="shadow-sm border-b sticky top-0 bg-white/50 backdrop-blur-xl z-30 p-4 dark:bg-neutral-900">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="hidden lg:inline-flex">

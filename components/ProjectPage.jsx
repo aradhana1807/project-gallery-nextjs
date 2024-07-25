@@ -40,7 +40,9 @@ export default function ProjectPage() {
           />
           <div className="flex flex-col gap-2">
             <h1 className="text-2xl font-bold">{project["project-title"]}</h1>
-            <p>{project["project-description"]}</p>
+            <p className="bg-[#f4978e]/20 p-2 rounded-md text-justify dark:bg-red-400/30">
+              {project["project-description"]}
+            </p>
             <p className="flex gap-2 text-sm text-red-600">
               <Link
                 href={project["project-url"]}

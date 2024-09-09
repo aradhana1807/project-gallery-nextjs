@@ -3,7 +3,6 @@ import "./globals.css";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import { ThemeProvider } from "next-themes";
 
-
 export const metadata = {
   title: "Project Gallery",
   description:
@@ -13,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

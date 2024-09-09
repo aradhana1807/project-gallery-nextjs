@@ -5,14 +5,14 @@ import { ModeToggle } from "./ModeToggle";
 
 export default function Header() {
   return (
-    <div className="shadow-sm border-b sticky top-0 bg-white/50 backdrop-blur-xl z-30 p-4 dark:bg-neutral-900">
+    <div className="shadow-sm border-b sticky top-0 bg-white/50 backdrop-blur-xl z-30 p-4  dark:bg-neutral-900">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="hidden lg:inline-flex">
+        <Link href="/" className="hidden md:inline-flex">
           <h1 className="text-3xl font-bold">Project Gallery</h1>
         </Link>
 
-        <Link href="/" className="lg:hidden flex items-center gap-2">
+        <Link href="/" className="md:hidden flex items-center gap-2 font-bold">
           <Code size={32} /> Gallery
         </Link>
 
